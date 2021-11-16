@@ -2,6 +2,7 @@
 colors:
 #66BFBF
 #11999E
+#40514E;
 */
 
 *,
@@ -12,8 +13,9 @@ colors:
 
 .body {
   margin: 0px;
-  line-height: 1.5px;
+  color: #40514E;
 }
+
 p {
   font-size: 1.2rem;
   line-height: 1.5;
@@ -40,7 +42,11 @@ img {
   margin: 0 auto;
 }
 .skill-section {
-  color: #40514E;
+  margin: 50px 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Card */
@@ -52,18 +58,6 @@ img {
   gap: 1.5rem;
   text-align: center;
 }
-
-@media (min-width: 770px) {
-  .card {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .card:nth-child(odd) .card__img {
-    order: 2;
-  }
-}
-
 .card + .card {
   margin-top: 2rem;
 }
@@ -78,3 +72,13 @@ img {
   flex-grow: 1;
 }
 
+@media (min-width: 770px) {
+  .card {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  .card:nth-child(odd) .card__img {
+    order: 2;
+  }
+}
